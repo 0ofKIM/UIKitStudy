@@ -13,6 +13,9 @@
 		FB7ADA0B28BE5D06003B0AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7ADA0928BE5D06003B0AC9 /* Main.storyboard */; };
 		FB7ADA0D28BE5D07003B0AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7ADA0C28BE5D07003B0AC9 /* Assets.xcassets */; };
 		FB7ADA1028BE5D07003B0AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7ADA0E28BE5D07003B0AC9 /* LaunchScreen.storyboard */; };
+		FB7ADA1928BE5DFA003B0AC9 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7ADA1828BE5DFA003B0AC9 /* UICollectionViewExtension.swift */; };
+		FB7ADA1C28BE5E42003B0AC9 /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7ADA1A28BE5E42003B0AC9 /* MainMenuCell.swift */; };
+		FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FB7ADA0C28BE5D07003B0AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7ADA0F28BE5D07003B0AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7ADA1128BE5D07003B0AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7ADA1828BE5DFA003B0AC9 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		FB7ADA1A28BE5E42003B0AC9 /* MainMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
+		FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,24 @@
 			children = (
 				FB7ADA0328BE5D06003B0AC9 /* AppDelegate.swift */,
 				FB7ADA0528BE5D06003B0AC9 /* SceneDelegate.swift */,
+				FB7ADA1728BE5DE0003B0AC9 /* Extension */,
 				FB7ADA0728BE5D06003B0AC9 /* ViewController.swift */,
+				FB7ADA1A28BE5E42003B0AC9 /* MainMenuCell.swift */,
+				FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */,
 				FB7ADA0928BE5D06003B0AC9 /* Main.storyboard */,
 				FB7ADA0C28BE5D07003B0AC9 /* Assets.xcassets */,
 				FB7ADA0E28BE5D07003B0AC9 /* LaunchScreen.storyboard */,
 				FB7ADA1128BE5D07003B0AC9 /* Info.plist */,
 			);
 			path = UIKitStudy;
+			sourceTree = "<group>";
+		};
+		FB7ADA1728BE5DE0003B0AC9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB7ADA1828BE5DFA003B0AC9 /* UICollectionViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +145,7 @@
 				FB7ADA1028BE5D07003B0AC9 /* LaunchScreen.storyboard in Resources */,
 				FB7ADA0D28BE5D07003B0AC9 /* Assets.xcassets in Resources */,
 				FB7ADA0B28BE5D06003B0AC9 /* Main.storyboard in Resources */,
+				FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7ADA1928BE5DFA003B0AC9 /* UICollectionViewExtension.swift in Sources */,
 				FB7ADA0828BE5D06003B0AC9 /* ViewController.swift in Sources */,
 				FB7ADA0428BE5D06003B0AC9 /* AppDelegate.swift in Sources */,
 				FB7ADA0628BE5D06003B0AC9 /* SceneDelegate.swift in Sources */,
+				FB7ADA1C28BE5E42003B0AC9 /* MainMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 833DD2H3KD;
@@ -302,6 +323,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ZeroOfKimStudy.UIKitStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 833DD2H3KD;
@@ -328,8 +351,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ZeroOfKimStudy.UIKitStudy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UIKitStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
