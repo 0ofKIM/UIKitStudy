@@ -36,6 +36,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("클릭")
+        guard let carouselEffectVC = self.storyboard?.instantiateViewController(identifier: "CarouselEffectViewController") else { return }
+
+        present(carouselEffectVC, animated: true)
     }
 }
