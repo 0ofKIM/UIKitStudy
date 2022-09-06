@@ -2,7 +2,7 @@
 //  UIColorExtension.swift
 //  UIKitStudy
 //
-//  Created by Lotte on 2022/09/06.
+//  Created by 0ofKim on 2022/09/06.
 //
 
 import UIKit

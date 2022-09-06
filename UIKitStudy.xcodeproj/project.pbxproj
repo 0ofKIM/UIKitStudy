@@ -17,6 +17,9 @@
 		FB7ADA1C28BE5E42003B0AC9 /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7ADA1A28BE5E42003B0AC9 /* MainMenuCell.swift */; };
 		FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */; };
 		FB93F2FF28C6420E00C5F4FA /* CarouselEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93F2FE28C6420E00C5F4FA /* CarouselEffectViewController.swift */; };
+		FBDA4C0328C7897E00FAC7A1 /* CarouselEffectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA4C0128C7897E00FAC7A1 /* CarouselEffectCell.swift */; };
+		FBDA4C0428C7897E00FAC7A1 /* CarouselEffectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDA4C0228C7897E00FAC7A1 /* CarouselEffectCell.xib */; };
+		FBDA4C0628C78A6F00FAC7A1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA4C0528C78A6F00FAC7A1 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FB7ADA1A28BE5E42003B0AC9 /* MainMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
 		FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
 		FB93F2FE28C6420E00C5F4FA /* CarouselEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEffectViewController.swift; sourceTree = "<group>"; };
+		FBDA4C0128C7897E00FAC7A1 /* CarouselEffectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEffectCell.swift; sourceTree = "<group>"; };
+		FBDA4C0228C7897E00FAC7A1 /* CarouselEffectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselEffectCell.xib; sourceTree = "<group>"; };
+		FBDA4C0528C78A6F00FAC7A1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +77,7 @@
 				FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */,
 				FB7ADA0928BE5D06003B0AC9 /* Main.storyboard */,
 				FB7ADA1728BE5DE0003B0AC9 /* Extension */,
-				FB93F2FD28C641CF00C5F4FA /* ViewController */,
+				FBDA4C0028C7893100FAC7A1 /* CarouselEffect */,
 				FB7ADA0C28BE5D07003B0AC9 /* Assets.xcassets */,
 				FB7ADA0E28BE5D07003B0AC9 /* LaunchScreen.storyboard */,
 				FB7ADA1128BE5D07003B0AC9 /* Info.plist */,
@@ -83,16 +89,19 @@
 			isa = PBXGroup;
 			children = (
 				FB7ADA1828BE5DFA003B0AC9 /* UICollectionViewExtension.swift */,
+				FBDA4C0528C78A6F00FAC7A1 /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		FB93F2FD28C641CF00C5F4FA /* ViewController */ = {
+		FBDA4C0028C7893100FAC7A1 /* CarouselEffect */ = {
 			isa = PBXGroup;
 			children = (
 				FB93F2FE28C6420E00C5F4FA /* CarouselEffectViewController.swift */,
+				FBDA4C0128C7897E00FAC7A1 /* CarouselEffectCell.swift */,
+				FBDA4C0228C7897E00FAC7A1 /* CarouselEffectCell.xib */,
 			);
-			path = ViewController;
+			path = CarouselEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +166,7 @@
 				FB7ADA0D28BE5D07003B0AC9 /* Assets.xcassets in Resources */,
 				FB7ADA0B28BE5D06003B0AC9 /* Main.storyboard in Resources */,
 				FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */,
+				FBDA4C0428C7897E00FAC7A1 /* CarouselEffectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +179,8 @@
 			files = (
 				FB7ADA1928BE5DFA003B0AC9 /* UICollectionViewExtension.swift in Sources */,
 				FB93F2FF28C6420E00C5F4FA /* CarouselEffectViewController.swift in Sources */,
+				FBDA4C0328C7897E00FAC7A1 /* CarouselEffectCell.swift in Sources */,
+				FBDA4C0628C78A6F00FAC7A1 /* UIColorExtension.swift in Sources */,
 				FB7ADA0828BE5D06003B0AC9 /* ViewController.swift in Sources */,
 				FB7ADA0428BE5D06003B0AC9 /* AppDelegate.swift in Sources */,
 				FB7ADA0628BE5D06003B0AC9 /* SceneDelegate.swift in Sources */,
