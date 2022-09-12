@@ -70,7 +70,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Di-EK-YXl">
-                                <rect key="frame" x="0.0" y="108" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="fxG-ez-FOK"/>
@@ -83,19 +83,45 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="targetContentOffset 사용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZN-q3-ApD">
+                                <rect key="frame" x="87.333333333333329" y="360" width="200.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KDV-oP-QoA">
+                                <rect key="frame" x="0.0" y="391" width="375" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mGb-36-ykM"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="Q9v-In-Gvv">
+                                    <size key="itemSize" width="275" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2zp-10-Z3N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9Di-EK-YXl" firstAttribute="top" secondItem="79n-8J-cyW" secondAttribute="bottom" constant="10" id="32U-2J-YTa"/>
+                            <constraint firstItem="KDV-oP-QoA" firstAttribute="leading" secondItem="2zp-10-Z3N" secondAttribute="leading" id="7Gw-gu-cWv"/>
                             <constraint firstItem="79n-8J-cyW" firstAttribute="centerX" secondItem="8io-Ic-tZD" secondAttribute="centerX" id="81m-Ea-4Ci"/>
-                            <constraint firstItem="9Di-EK-YXl" firstAttribute="top" secondItem="2zp-10-Z3N" secondAttribute="top" constant="64" id="VK9-vA-Tpd"/>
+                            <constraint firstItem="2zp-10-Z3N" firstAttribute="trailing" secondItem="KDV-oP-QoA" secondAttribute="trailing" id="Mcg-x6-2os"/>
                             <constraint firstItem="9Di-EK-YXl" firstAttribute="leading" secondItem="2zp-10-Z3N" secondAttribute="leading" id="dU2-Mq-uuM"/>
                             <constraint firstItem="79n-8J-cyW" firstAttribute="top" secondItem="2zp-10-Z3N" secondAttribute="top" constant="35" id="dhN-dZ-KLH"/>
+                            <constraint firstItem="gZN-q3-ApD" firstAttribute="centerX" secondItem="8io-Ic-tZD" secondAttribute="centerX" id="lTh-T8-SWW"/>
+                            <constraint firstItem="gZN-q3-ApD" firstAttribute="top" secondItem="9Di-EK-YXl" secondAttribute="bottom" constant="50" id="n4S-T9-Nep"/>
+                            <constraint firstItem="KDV-oP-QoA" firstAttribute="top" secondItem="gZN-q3-ApD" secondAttribute="bottom" constant="10" id="nZG-jG-iuv"/>
                             <constraint firstItem="2zp-10-Z3N" firstAttribute="trailing" secondItem="9Di-EK-YXl" secondAttribute="trailing" id="zmo-oY-tFg"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="9Di-EK-YXl" id="XBj-OC-3Ea"/>
+                        <outlet property="offsetCollectionView" destination="KDV-oP-QoA" id="oVG-ar-qwc"/>
+                        <outlet property="pagingCollectionView" destination="9Di-EK-YXl" id="wqU-c3-MKb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8a-vl-szt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
