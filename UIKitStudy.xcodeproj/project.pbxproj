@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB70437928E8215300364BBA /* CompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */; };
+		FB70437E28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70437C28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift */; };
+		FB70437F28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB70437D28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib */; };
 		FB7ADA0428BE5D06003B0AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7ADA0328BE5D06003B0AC9 /* AppDelegate.swift */; };
 		FB7ADA0628BE5D06003B0AC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7ADA0528BE5D06003B0AC9 /* SceneDelegate.swift */; };
 		FB7ADA0828BE5D06003B0AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7ADA0728BE5D06003B0AC9 /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutViewController.swift; sourceTree = "<group>"; };
+		FB70437C28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumberCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB70437D28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestNumberCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB7ADA0028BE5D06003B0AC9 /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7ADA0328BE5D06003B0AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB7ADA0528BE5D06003B0AC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB70437728E8212100364BBA /* CompositionalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FB70437B28EABCB000364BBA /* TestNumberCell */,
+				FB70437A28EABA8C00364BBA /* InstaFeed */,
+				FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */,
+			);
+			path = CompositionalLayout;
+			sourceTree = "<group>";
+		};
+		FB70437A28EABA8C00364BBA /* InstaFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InstaFeed;
+			sourceTree = "<group>";
+		};
+		FB70437B28EABCB000364BBA /* TestNumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				FB70437C28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift */,
+				FB70437D28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib */,
+			);
+			path = TestNumberCell;
+			sourceTree = "<group>";
+		};
 		FB7AD9F728BE5D06003B0AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +110,7 @@
 				FB7ADA0928BE5D06003B0AC9 /* Main.storyboard */,
 				FB7ADA1728BE5DE0003B0AC9 /* Extension */,
 				FBDA4C0028C7893100FAC7A1 /* CarouselEffect */,
+				FB70437728E8212100364BBA /* CompositionalLayout */,
 				FB7ADA0C28BE5D07003B0AC9 /* Assets.xcassets */,
 				FB7ADA0E28BE5D07003B0AC9 /* LaunchScreen.storyboard */,
 				FB7ADA1128BE5D07003B0AC9 /* Info.plist */,
@@ -165,6 +198,7 @@
 				FB7ADA1028BE5D07003B0AC9 /* LaunchScreen.storyboard in Resources */,
 				FB7ADA0D28BE5D07003B0AC9 /* Assets.xcassets in Resources */,
 				FB7ADA0B28BE5D06003B0AC9 /* Main.storyboard in Resources */,
+				FB70437F28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib in Resources */,
 				FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */,
 				FBDA4C0428C7897E00FAC7A1 /* CarouselEffectCell.xib in Resources */,
 			);
@@ -178,8 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7ADA1928BE5DFA003B0AC9 /* UICollectionViewExtension.swift in Sources */,
+				FB70437E28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift in Sources */,
 				FB93F2FF28C6420E00C5F4FA /* CarouselEffectViewController.swift in Sources */,
 				FBDA4C0328C7897E00FAC7A1 /* CarouselEffectCell.swift in Sources */,
+				FB70437928E8215300364BBA /* CompositionalLayoutViewController.swift in Sources */,
 				FBDA4C0628C78A6F00FAC7A1 /* UIColorExtension.swift in Sources */,
 				FB7ADA0828BE5D06003B0AC9 /* ViewController.swift in Sources */,
 				FB7ADA0428BE5D06003B0AC9 /* AppDelegate.swift in Sources */,

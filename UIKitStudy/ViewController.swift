@@ -21,12 +21,16 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: MainMenuCell = collectionView.dequeueReusableCell(for: indexPath)
-        cell.configure("CollectionView Carousel Effect")
+        if indexPath.row == 0 {
+            cell.configure("CollectionView Carousel Effect")
+        } else if indexPath.row == 1 {
+            cell.configure("Compositional Layout")
+        }
         return cell
     }
 
@@ -36,8 +40,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let carouselEffectVC = self.storyboard?.instantiateViewController(identifier: "CarouselEffectViewController") else { return }
-
-        present(carouselEffectVC, animated: true)
+        if indexPath.row == 0 {
+            guard let carouselEffectVC = self.storyboard?.instantiateViewController(identifier: "CarouselEffectViewController") else { return }
+            present(carouselEffectVC, animated: true)
+        } else {
+            guard let compositionalLayoutVC = self.storyboard?.instantiateViewController(identifier: "CompositionalLayoutViewController") else { return }
+            present(compositionalLayoutVC, animated: true)
+        }
     }
 }
