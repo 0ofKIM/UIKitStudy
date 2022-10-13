@@ -2,7 +2,7 @@
 //  CompositionalLayoutViewController.swift
 //  UIKitStudy
 //
-//  Created by Lotte on 2022/10/01.
+//  Created by 0ofKim on 2022/10/01.
 //
 
 import UIKit
@@ -21,42 +21,43 @@ class CompositionalLayoutViewController: UIViewController {
     private func setCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(TestNumberCellCollectionViewCell.self)
-        collectionView.collectionViewLayout = createSimpleLayout()
+        collectionView.register(LayoutCell.self)
+        collectionView.collectionViewLayout = createBaseLayout()
     }
 }
 
 extension CompositionalLayoutViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 2
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: TestNumberCellCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
-        cell.configure(text: String(indexPath.row+1))
+        switch indexPath.row {
+        case 0:
+            let cell: LayoutCell = collectionView.dequeueReusableCell(for: indexPath)
+            cell.configure(layoutType: .simpleLayout)
+            return cell
+            
+        case 1:
+            let cell: LayoutCell = collectionView.dequeueReusableCell(for: indexPath)
+            cell.configure(layoutType: .verticalTriSectionLayout)
+            return cell
 
-        return cell
+        default: return UICollectionViewCell()
+        }
     }
 }
 
 extension CompositionalLayoutViewController {
-    func createSimpleLayout() -> UICollectionViewLayout {
-        let leadingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .fractionalHeight(1.0))
-        let leadingItem = NSCollectionLayoutItem(layoutSize: leadingItemSize)
-        leadingItem.contentInsets = NSDirectionalEdgeInsets(top: 5.0, leading: 5.0, bottom: 5.0, trailing: 5.0)
+    func createBaseLayout() -> UICollectionViewLayout {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(241))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0)
 
-        let trailingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.5))
-        let trailingItem = NSCollectionLayoutItem(layoutSize: trailingItemSize)
-        trailingItem.contentInsets = NSDirectionalEdgeInsets(top: 5.0, leading: 5.0, bottom: 5.0, trailing: 5.0)
-
-        let trailingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1.0))
-        let trailingGroup = NSCollectionLayoutGroup.vertical(layoutSize: trailingGroupSize, subitem: trailingItem, count: 2)
-
-        let nestedGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(200))
-        let nestedGroup = NSCollectionLayoutGroup.horizontal(layoutSize: nestedGroupSize, subitems: [leadingItem, trailingGroup])
-
-        let section = NSCollectionLayoutSection(group: nestedGroup)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 5.0, leading: 5.0, bottom: 5.0, trailing: 5.0)
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(241))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0)
 
         return UICollectionViewCompositionalLayout(section: section)
     }
