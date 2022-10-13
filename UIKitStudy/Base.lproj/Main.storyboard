@@ -137,13 +137,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PFY-Qs-zkA">
-                                <rect key="frame" x="0.0" y="112.33333333333331" width="375" height="200"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p2n-i7-5Js">
+                                <rect key="frame" x="0.0" y="47" width="375" height="731"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="gMa-Pa-MT2"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2C4-9y-T1q">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6no-O9-eI5">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -151,25 +148,18 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf9-9h-Ac6">
-                                <rect key="frame" x="129.66666666666666" y="82" width="116" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vIQ-Rw-Pgu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Wf9-9h-Ac6" firstAttribute="top" secondItem="vIQ-Rw-Pgu" secondAttribute="top" constant="35" id="MS0-0s-N65"/>
-                            <constraint firstItem="vIQ-Rw-Pgu" firstAttribute="trailing" secondItem="PFY-Qs-zkA" secondAttribute="trailing" id="PfX-yS-lin"/>
-                            <constraint firstItem="Wf9-9h-Ac6" firstAttribute="centerX" secondItem="MOw-LF-ndZ" secondAttribute="centerX" id="gGW-MM-OnT"/>
-                            <constraint firstItem="PFY-Qs-zkA" firstAttribute="top" secondItem="Wf9-9h-Ac6" secondAttribute="bottom" constant="10" id="hmh-i3-HWg"/>
-                            <constraint firstItem="PFY-Qs-zkA" firstAttribute="leading" secondItem="vIQ-Rw-Pgu" secondAttribute="leading" id="oxD-I6-Yot"/>
+                            <constraint firstItem="p2n-i7-5Js" firstAttribute="trailing" secondItem="vIQ-Rw-Pgu" secondAttribute="trailing" id="Exa-q8-mUg"/>
+                            <constraint firstItem="p2n-i7-5Js" firstAttribute="leading" secondItem="vIQ-Rw-Pgu" secondAttribute="leading" id="UvE-H5-adc"/>
+                            <constraint firstItem="p2n-i7-5Js" firstAttribute="top" secondItem="vIQ-Rw-Pgu" secondAttribute="top" id="ViM-QA-VKc"/>
+                            <constraint firstItem="vIQ-Rw-Pgu" firstAttribute="bottom" secondItem="p2n-i7-5Js" secondAttribute="bottom" id="mMd-A3-LH4"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="PFY-Qs-zkA" id="LUE-Ts-1yG"/>
+                        <outlet property="collectionView" destination="p2n-i7-5Js" id="iOd-eQ-Y45"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XcQ-hq-ocm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

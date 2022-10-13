@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB452B4528F7D4E40095D666 /* LayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB452B4328F7D4E40095D666 /* LayoutCell.swift */; };
+		FB452B4628F7D4E40095D666 /* LayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB452B4428F7D4E40095D666 /* LayoutCell.xib */; };
 		FB70437928E8215300364BBA /* CompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */; };
 		FB70437E28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70437C28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift */; };
 		FB70437F28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB70437D28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB452B4328F7D4E40095D666 /* LayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCell.swift; sourceTree = "<group>"; };
+		FB452B4428F7D4E40095D666 /* LayoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutCell.xib; sourceTree = "<group>"; };
 		FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutViewController.swift; sourceTree = "<group>"; };
 		FB70437C28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNumberCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB70437D28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestNumberCellCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -57,9 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB452B4228F7D4CE0095D666 /* LayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				FB452B4328F7D4E40095D666 /* LayoutCell.swift */,
+				FB452B4428F7D4E40095D666 /* LayoutCell.xib */,
+			);
+			path = LayoutCell;
+			sourceTree = "<group>";
+		};
 		FB70437728E8212100364BBA /* CompositionalLayout */ = {
 			isa = PBXGroup;
 			children = (
+				FB452B4228F7D4CE0095D666 /* LayoutCell */,
 				FB70437B28EABCB000364BBA /* TestNumberCell */,
 				FB70437A28EABA8C00364BBA /* InstaFeed */,
 				FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */,
@@ -197,6 +211,7 @@
 			files = (
 				FB7ADA1028BE5D07003B0AC9 /* LaunchScreen.storyboard in Resources */,
 				FB7ADA0D28BE5D07003B0AC9 /* Assets.xcassets in Resources */,
+				FB452B4628F7D4E40095D666 /* LayoutCell.xib in Resources */,
 				FB7ADA0B28BE5D06003B0AC9 /* Main.storyboard in Resources */,
 				FB70437F28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib in Resources */,
 				FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */,
@@ -216,6 +231,7 @@
 				FB93F2FF28C6420E00C5F4FA /* CarouselEffectViewController.swift in Sources */,
 				FBDA4C0328C7897E00FAC7A1 /* CarouselEffectCell.swift in Sources */,
 				FB70437928E8215300364BBA /* CompositionalLayoutViewController.swift in Sources */,
+				FB452B4528F7D4E40095D666 /* LayoutCell.swift in Sources */,
 				FBDA4C0628C78A6F00FAC7A1 /* UIColorExtension.swift in Sources */,
 				FB7ADA0828BE5D06003B0AC9 /* ViewController.swift in Sources */,
 				FB7ADA0428BE5D06003B0AC9 /* AppDelegate.swift in Sources */,

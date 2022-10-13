@@ -2,7 +2,7 @@
 //  TestNumberCellCollectionViewCell.swift
 //  UIKitStudy
 //
-//  Created by Lotte on 2022/10/03.
+//  Created by 0ofKim on 2022/10/03.
 //
 
 import UIKit
