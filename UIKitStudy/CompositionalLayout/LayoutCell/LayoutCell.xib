@@ -21,9 +21,6 @@
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="C5E-8Y-tjH">
                         <rect key="frame" x="0.0" y="41" width="375" height="200"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="200" id="dqI-Vx-ewy"/>
-                        </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r3b-AV-nJ2">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -46,6 +43,7 @@
                 <constraint firstAttribute="trailing" secondItem="C5E-8Y-tjH" secondAttribute="trailing" id="dSc-AQ-k5B"/>
                 <constraint firstItem="dGr-ka-cMd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fgT-TU-I86"/>
                 <constraint firstItem="C5E-8Y-tjH" firstAttribute="top" secondItem="dGr-ka-cMd" secondAttribute="bottom" constant="10" id="ipB-wR-fM0"/>
+                <constraint firstAttribute="bottom" secondItem="C5E-8Y-tjH" secondAttribute="bottom" id="tIQ-t5-a1B"/>
             </constraints>
             <size key="customSize" width="266" height="241"/>
             <connections>

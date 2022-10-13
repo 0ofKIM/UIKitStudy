@@ -42,7 +42,7 @@ class LayoutCell: UICollectionViewCell {
 
         case .verticalTriSectionLayout:
             collectionView.register(TestNumberCellCollectionViewCell.self)
-//            collectionView.collectionViewLayout = createVerticalTriSectionLayout()
+            collectionView.collectionViewLayout = createVerticalTriSectionLayout()
 
         default: break
         }
@@ -69,20 +69,43 @@ class LayoutCell: UICollectionViewCell {
         return UICollectionViewCompositionalLayout(section: section)
     }
 
-//    private func createVerticalTriSectionLayout() -> UICollectionViewLayout {
-//        let leadingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1.0))
-//
-//        let middleItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1.0))
-//
-//        return UICollectionViewCompositionalLayout(section: <#T##NSCollectionLayoutSection#>)
-//    }
+    private func createVerticalTriSectionLayout() -> UICollectionViewLayout {
+        //leading
+        let leadingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0/3.0))
+        let leadingItem = NSCollectionLayoutItem(layoutSize: leadingItemSize)
+        leadingItem.contentInsets = NSDirectionalEdgeInsets(top: 5.0, leading: 0.0, bottom: 5.0, trailing: 0.0)
+
+        let leadingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0/3.0), heightDimension: .fractionalHeight(1.0))
+        let leadingGroup = NSCollectionLayoutGroup.vertical(layoutSize: leadingGroupSize, subitem: leadingItem, count: 3)
+
+        //middle
+        let middleItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0/3.0), heightDimension: .fractionalHeight(1.0))
+        let middleItem = NSCollectionLayoutItem(layoutSize: middleItemSize)
+        middleItem.contentInsets = NSDirectionalEdgeInsets(top: 5.0, leading: 5.0, bottom: 5.0, trailing: 5.0)
+
+        //trailing
+        let trailingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0/3.0))
+        let trailingItem = NSCollectionLayoutItem(layoutSize: trailingItemSize)
+        trailingItem.contentInsets = NSDirectionalEdgeInsets(top: 5.0, leading: 0.0, bottom: 5.0, trailing: 0.0)
+
+        let trailingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0/3.0), heightDimension: .fractionalHeight(1.0))
+        let trailingGroup = NSCollectionLayoutGroup.vertical(layoutSize: trailingGroupSize, subitem: leadingItem, count: 3)
+
+        let nestedGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(200))
+        let nestedGroup = NSCollectionLayoutGroup.horizontal(layoutSize: nestedGroupSize, subitems: [leadingGroup, middleItem, trailingGroup])
+
+        let section = NSCollectionLayoutSection(group: nestedGroup)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 5.0, leading: 5.0, bottom: 5.0, trailing: 5.0)
+
+        return UICollectionViewCompositionalLayout(section: section)
+    }
 }
 
 extension LayoutCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch layoutType {
-        case .simpleLayout: return 4
-        case .verticalTriSectionLayout: return 0
+        case .simpleLayout: return 3
+        case .verticalTriSectionLayout: return 7
         default: return 0
         }
     }
