@@ -28,7 +28,7 @@ class CompositionalLayoutViewController: UIViewController {
 
 extension CompositionalLayoutViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -41,6 +41,11 @@ extension CompositionalLayoutViewController: UICollectionViewDelegate, UICollect
         case 1:
             let cell: LayoutCell = collectionView.dequeueReusableCell(for: indexPath)
             cell.configure(layoutType: .verticalTriSectionLayout)
+            return cell
+
+        case 2:
+            let cell: LayoutCell = collectionView.dequeueReusableCell(for: indexPath)
+            cell.configure(layoutType: .treeLayout)
             return cell
 
         default: return UICollectionViewCell()
