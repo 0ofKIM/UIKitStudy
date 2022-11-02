@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1A14BF2912B7AE00432A5D /* AsyncAwaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1A14BD2912B7AE00432A5D /* AsyncAwaitViewController.swift */; };
 		FB452B4528F7D4E40095D666 /* LayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB452B4328F7D4E40095D666 /* LayoutCell.swift */; };
 		FB452B4628F7D4E40095D666 /* LayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB452B4428F7D4E40095D666 /* LayoutCell.xib */; };
 		FB70437928E8215300364BBA /* CompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1A14BD2912B7AE00432A5D /* AsyncAwaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitViewController.swift; sourceTree = "<group>"; };
 		FB452B4328F7D4E40095D666 /* LayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCell.swift; sourceTree = "<group>"; };
 		FB452B4428F7D4E40095D666 /* LayoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutCell.xib; sourceTree = "<group>"; };
 		FB70437828E8215300364BBA /* CompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1A14BC2912B76700432A5D /* AsyncAwait */ = {
+			isa = PBXGroup;
+			children = (
+				FB1A14BD2912B7AE00432A5D /* AsyncAwaitViewController.swift */,
+			);
+			path = AsyncAwait;
+			sourceTree = "<group>";
+		};
 		FB452B4228F7D4CE0095D666 /* LayoutCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 				FB7ADA1728BE5DE0003B0AC9 /* Extension */,
 				FBDA4C0028C7893100FAC7A1 /* CarouselEffect */,
 				FB70437728E8212100364BBA /* CompositionalLayout */,
+				FB1A14BC2912B76700432A5D /* AsyncAwait */,
 				FB7ADA0C28BE5D07003B0AC9 /* Assets.xcassets */,
 				FB7ADA0E28BE5D07003B0AC9 /* LaunchScreen.storyboard */,
 				FB7ADA1128BE5D07003B0AC9 /* Info.plist */,
@@ -230,6 +241,7 @@
 				FB70437E28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift in Sources */,
 				FB93F2FF28C6420E00C5F4FA /* CarouselEffectViewController.swift in Sources */,
 				FBDA4C0328C7897E00FAC7A1 /* CarouselEffectCell.swift in Sources */,
+				FB1A14BF2912B7AE00432A5D /* AsyncAwaitViewController.swift in Sources */,
 				FB70437928E8215300364BBA /* CompositionalLayoutViewController.swift in Sources */,
 				FB452B4528F7D4E40095D666 /* LayoutCell.swift in Sources */,
 				FBDA4C0628C78A6F00FAC7A1 /* UIColorExtension.swift in Sources */,
