@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -30,6 +30,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             cell.configure("CollectionView Carousel Effect")
         } else if indexPath.row == 1 {
             cell.configure("Compositional Layout")
+        } else if indexPath.row == 2 {
+            cell.configure("Async Await")
         }
         return cell
     }
@@ -43,9 +45,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         if indexPath.row == 0 {
             guard let carouselEffectVC = self.storyboard?.instantiateViewController(identifier: "CarouselEffectViewController") else { return }
             present(carouselEffectVC, animated: true)
-        } else {
+        } else if indexPath.row == 1 {
             guard let compositionalLayoutVC = self.storyboard?.instantiateViewController(identifier: "CompositionalLayoutViewController") else { return }
             present(compositionalLayoutVC, animated: true)
+        } else {
+            guard let asyncAwaitVC = self.storyboard?.instantiateViewController(identifier: "AsyncAwaitViewController") else { return }
+            present(asyncAwaitVC, animated: true)
         }
     }
 }
