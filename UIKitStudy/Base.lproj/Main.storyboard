@@ -221,6 +221,21 @@
             </objects>
             <point key="canvasLocation" x="1559" y="797"/>
         </scene>
+        <!--Swipe Banner Interaction View Controller-->
+        <scene sceneID="XVA-qx-m0B">
+            <objects>
+                <viewController storyboardIdentifier="SwipeBannerInteractionViewController" id="9sv-1B-PpM" customClass="SwipeBannerInteractionViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GhO-5Y-yjX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xuM-fK-aDd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4A-I1-2Xn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2295" y="797"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
