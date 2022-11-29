@@ -24,6 +24,8 @@
 		FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */; };
 		FB93F2FF28C6420E00C5F4FA /* CarouselEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93F2FE28C6420E00C5F4FA /* CarouselEffectViewController.swift */; };
 		FBA567D829325E910097C1EF /* SwipeBannerInteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA567D729325E910097C1EF /* SwipeBannerInteractionViewController.swift */; };
+		FBA567DC293265CB0097C1EF /* SwipeBannerInteractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA567DA293265CB0097C1EF /* SwipeBannerInteractionCell.swift */; };
+		FBA567DD293265CB0097C1EF /* SwipeBannerInteractionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA567DB293265CB0097C1EF /* SwipeBannerInteractionCell.xib */; };
 		FBDA4C0328C7897E00FAC7A1 /* CarouselEffectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA4C0128C7897E00FAC7A1 /* CarouselEffectCell.swift */; };
 		FBDA4C0428C7897E00FAC7A1 /* CarouselEffectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDA4C0228C7897E00FAC7A1 /* CarouselEffectCell.xib */; };
 		FBDA4C0628C78A6F00FAC7A1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA4C0528C78A6F00FAC7A1 /* UIColorExtension.swift */; };
@@ -49,6 +51,8 @@
 		FB7ADA1B28BE5E42003B0AC9 /* MainMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
 		FB93F2FE28C6420E00C5F4FA /* CarouselEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEffectViewController.swift; sourceTree = "<group>"; };
 		FBA567D729325E910097C1EF /* SwipeBannerInteractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeBannerInteractionViewController.swift; sourceTree = "<group>"; };
+		FBA567DA293265CB0097C1EF /* SwipeBannerInteractionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeBannerInteractionCell.swift; sourceTree = "<group>"; };
+		FBA567DB293265CB0097C1EF /* SwipeBannerInteractionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeBannerInteractionCell.xib; sourceTree = "<group>"; };
 		FBDA4C0128C7897E00FAC7A1 /* CarouselEffectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEffectCell.swift; sourceTree = "<group>"; };
 		FBDA4C0228C7897E00FAC7A1 /* CarouselEffectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselEffectCell.xib; sourceTree = "<group>"; };
 		FBDA4C0528C78A6F00FAC7A1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				FBA567D729325E910097C1EF /* SwipeBannerInteractionViewController.swift */,
+				FBA567DA293265CB0097C1EF /* SwipeBannerInteractionCell.swift */,
+				FBA567DB293265CB0097C1EF /* SwipeBannerInteractionCell.xib */,
 			);
 			path = SwipeBannerInteraction;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				FB452B4628F7D4E40095D666 /* LayoutCell.xib in Resources */,
 				FB7ADA0B28BE5D06003B0AC9 /* Main.storyboard in Resources */,
 				FB70437F28EABCF800364BBA /* TestNumberCellCollectionViewCell.xib in Resources */,
+				FBA567DD293265CB0097C1EF /* SwipeBannerInteractionCell.xib in Resources */,
 				FB7ADA1D28BE5E42003B0AC9 /* MainMenuCell.xib in Resources */,
 				FBDA4C0428C7897E00FAC7A1 /* CarouselEffectCell.xib in Resources */,
 			);
@@ -250,6 +257,7 @@
 			files = (
 				FB7ADA1928BE5DFA003B0AC9 /* UICollectionViewExtension.swift in Sources */,
 				FB70437E28EABCF800364BBA /* TestNumberCellCollectionViewCell.swift in Sources */,
+				FBA567DC293265CB0097C1EF /* SwipeBannerInteractionCell.swift in Sources */,
 				FB93F2FF28C6420E00C5F4FA /* CarouselEffectViewController.swift in Sources */,
 				FBDA4C0328C7897E00FAC7A1 /* CarouselEffectCell.swift in Sources */,
 				FB1A14BF2912B7AE00432A5D /* AsyncAwaitViewController.swift in Sources */,
