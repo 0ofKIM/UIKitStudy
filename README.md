@@ -8,3 +8,6 @@
   - Simple Layout
 
 3. Async/Await
+
+4. Swipe Banner Interaction
+  - 네이버 메인 화면 배너 스와이프 애니메이션
