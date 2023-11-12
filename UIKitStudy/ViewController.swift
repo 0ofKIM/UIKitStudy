@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -34,6 +34,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             cell.configure("Async Await")
         } else if indexPath.row == 3 {
             cell.configure("Swipe Banner Interaction")
+        } else if indexPath.row == 4 {
+            cell.configure("FrameBounds ViewController")
         }
         return cell
     }
@@ -53,9 +55,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         } else if indexPath.row == 2 {
             guard let asyncAwaitVC = self.storyboard?.instantiateViewController(identifier: "AsyncAwaitViewController") else { return }
             present(asyncAwaitVC, animated: true)
-        } else {
+        } else if indexPath.row == 3{
             guard let swipeBannerInteractionVC = self.storyboard?.instantiateViewController(identifier: "SwipeBannerInteractionViewController") else { return }
             present(swipeBannerInteractionVC, animated: true)
+        } else {
+            guard let frameBoundsVC = self.storyboard?.instantiateViewController(identifier: "FrameBoundsViewController") else { return }
+            present(frameBoundsVC, animated: true)
         }
     }
 }

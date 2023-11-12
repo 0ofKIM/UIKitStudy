@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526A84892AE95CC60001B20A /* FrameBoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A84882AE95CC60001B20A /* FrameBoundsViewController.swift */; };
 		FB1A14BF2912B7AE00432A5D /* AsyncAwaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1A14BD2912B7AE00432A5D /* AsyncAwaitViewController.swift */; };
 		FB452B4528F7D4E40095D666 /* LayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB452B4328F7D4E40095D666 /* LayoutCell.swift */; };
 		FB452B4628F7D4E40095D666 /* LayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB452B4428F7D4E40095D666 /* LayoutCell.xib */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		526A84882AE95CC60001B20A /* FrameBoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameBoundsViewController.swift; sourceTree = "<group>"; };
 		FB1A14BD2912B7AE00432A5D /* AsyncAwaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitViewController.swift; sourceTree = "<group>"; };
 		FB452B4328F7D4E40095D666 /* LayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCell.swift; sourceTree = "<group>"; };
 		FB452B4428F7D4E40095D666 /* LayoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutCell.xib; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526A84872AE95C8C0001B20A /* FrameBounds */ = {
+			isa = PBXGroup;
+			children = (
+				526A84882AE95CC60001B20A /* FrameBoundsViewController.swift */,
+			);
+			path = FrameBounds;
+			sourceTree = "<group>";
+		};
 		FB1A14BC2912B76700432A5D /* AsyncAwait */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 				FB70437728E8212100364BBA /* CompositionalLayout */,
 				FB1A14BC2912B76700432A5D /* AsyncAwait */,
 				FBA567D229325DFF0097C1EF /* SwipeBannerInteraction */,
+				526A84872AE95C8C0001B20A /* FrameBounds */,
 				FB7ADA0C28BE5D07003B0AC9 /* Assets.xcassets */,
 				FB7ADA0E28BE5D07003B0AC9 /* LaunchScreen.storyboard */,
 				FB7ADA1128BE5D07003B0AC9 /* Info.plist */,
@@ -266,6 +277,7 @@
 				FB452B4528F7D4E40095D666 /* LayoutCell.swift in Sources */,
 				FBDA4C0628C78A6F00FAC7A1 /* UIColorExtension.swift in Sources */,
 				FB7ADA0828BE5D06003B0AC9 /* ViewController.swift in Sources */,
+				526A84892AE95CC60001B20A /* FrameBoundsViewController.swift in Sources */,
 				FB7ADA0428BE5D06003B0AC9 /* AppDelegate.swift in Sources */,
 				FB7ADA0628BE5D06003B0AC9 /* SceneDelegate.swift in Sources */,
 				FB7ADA1C28BE5E42003B0AC9 /* MainMenuCell.swift in Sources */,
